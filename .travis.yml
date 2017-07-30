@@ -5,6 +5,8 @@ deploy:
   provider: heroku
   api_key:
     secure: Kd22+PCEksxe8Au+CzotSfgC0M6xe8l8WGIi/a0G5WS63w9uYzxtUTIgdPZNadEykVCpirNQiTUhet+GkWsnPfXZmDBqaa09KYYH7Q0o7ZHHL5u6E35I+Xlo42tC3SdU5anGRYGJCJu+Gb4CbvcQzULS3tLYgPRaxX7y5ew8LsN1si4V36cJ9zog5QbxMnbSr3nt5t0Fjjm1Z1nUcjl8FGm8QA5pCKzlaT7EhyqhLFuzXHlLDPNs5+4Brb9QbYyC7OqjwNBoK18PB/uqxsltMYUpUPyxxcdinKnsK9Je2T6UHmy8QLG8udium9C0DNYt+IVnSeUVdRL9nPHl8YVzWueiEqzzCMSmIPlmE3QSCq0slSMqF0k6QDZZUXyFYdP7osFuPYSEGW9SbJE1ugrfewuZrxWjXHQYyqCz3RSjy2gJ9fK3z25ve+lSO+8qCaxVsKaOYvHjazr7d8+0vREg7xld+mtkD237PaeHcmPflXJ3So0A1xhEaBX2gi7vUqrVGuZTNDxqSO8m29QadWas35zQFBccMGzSV4bqQW6qkMGQ8dwrCWIRnttTTAk+ypFgtk5zG3J847Ir1FClHMTdKbd0QrEYHRW16sKt1HyoIkclMtVJkMMoZ9RBwPFE8y/LgUfie11WVs5waPrp5Hein9JJnU9TDq4eRxDAVTFHSv4=
-  app: qccoders-production
+  app: 
+    master: qccoders-production
+    develop: qccoders-staging
   on:
     repo: qccoders/qccoders.org
