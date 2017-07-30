@@ -15,11 +15,13 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "mocha test/*.js",
     "eject": "react-scripts eject"
   },
   "devDependencies": {
+    "chai": "^4.1.0",
     "enzyme": "^2.9.1",
+    "mocha": "^3.4.2",
     "prop-types": "^15.5.10"
   }
 }
