@@ -22,6 +22,7 @@
     "chai": "^4.1.0",
     "enzyme": "^2.9.1",
     "mocha": "^3.4.2",
-    "prop-types": "^15.5.10"
+    "prop-types": "^15.5.10",
+    "react-social-icons": "^2.7.0"
   }
 }

@@ -8,6 +8,7 @@ import Calendar from '../shared/Calendar'
 import eventsList from '../data/calendarData'
 import NavBar from './NavBar'
 import Header from './Header'
+import GroupDetails from './GroupDetails'
 
 //styles
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -19,7 +20,8 @@ const App = props => (
     <NavBar />
     <Header />
     <div className="App container">
-      <Calendar eventsList={eventsList} />
+    <GroupDetails />
+    <Calendar eventsList={eventsList} />
     </div>
   </div>
 );
