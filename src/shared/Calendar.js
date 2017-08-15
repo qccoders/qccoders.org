@@ -9,14 +9,15 @@ import '../styles/Calendar.css'
 BigCalendar.momentLocalizer(moment);
 
 const Calendar = props => (
-  <div className='Calendar'>
-    <BigCalendar
-      className='BigCalendar'
-      events={props.eventsList}
-      startAccessor='startDate'
-      endAccessor='endDate'
-    />
-  </div>
+    <div className='Calendar'>
+        <BigCalendar
+            className='BigCalendar'
+            events={props.eventsList}
+            startAccessor='startDate'
+            endAccessor='endDate'
+            views={['month', 'agenda']}
+        />
+    </div>
 );
 
 Calendar.propTypes = {
