@@ -19,9 +19,9 @@ const App = props => (
   <div>
     <NavBar />
     <Header />
-    <div className="App container">
-    <GroupDetails />
-    <Calendar eventsList={eventsList} />
+    <div className="App">
+        <GroupDetails />
+        <Calendar eventsList={eventsList} />
     </div>
   </div>
 );

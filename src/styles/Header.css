@@ -1,4 +1,10 @@
 .Header {
+    grid-column: var(--grid-max-width);
+    grid-row: 2 / 3;
     background-color:#25135b;
-    height: 400px;
+}
+
+.Header > div > canvas {
+    background-color:var(--header-bg);
+    height:var(--header-size) !important;
 }
