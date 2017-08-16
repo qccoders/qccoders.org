@@ -1,9 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import FormattedParagraph from '../shared/FormattedParagraph'
-import { SocialIcon } from 'react-social-icons';
 import {groupDetailsIntro} from '../data/groupDetailsText'
-
 import '../styles/GroupDetails.css';
 
 const GroupDetails = props => (
