@@ -1,10 +1,13 @@
-import axios from 'axios'
 import React, { Component } from 'react'
 import {slackToken} from '../credentials'
 import isEmail from 'validator/lib/isEmail'
+import PropTypes from 'prop-types'
+
+import { sendSlackInvite } from '../services/sendSlackInvite'
 
 
 class SlackEmailForm extends Component {
+    
     state = {
         inputText: ""
     }
@@ -15,7 +18,7 @@ class SlackEmailForm extends Component {
 
         e.preventDefault()
         console.log(isEmail(inputText))
-        isEmail(inputText) ? this.sendSlackInvite(inputText) : this.displayInputError()
+        isEmail(inputText) ? sendSlackInvite(inputText, slackToken) : this.displayInputError()
 
     }
 
@@ -25,18 +28,6 @@ class SlackEmailForm extends Component {
             inputText: e.target.value
         })
         
-    }
-
-    sendSlackInvite = (email) => {
-        const inviteApi = `https://slack.com/api/users.admin.invite?resend=true&token=${slackToken}&email=${email}&channels=C2C6PRY0Y`
-        axios.get(inviteApi)
-            .then(res => {
-                const {ok} = res.data
-                ok ? console.log('success') : console.log(res.data.error)
-            })
-            .catch(e => {
-                console.log('uh, something went wrong on our end')
-            })
     }
 
     displayInputError = () => {
