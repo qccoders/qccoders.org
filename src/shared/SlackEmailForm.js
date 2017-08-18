@@ -9,16 +9,32 @@ import { sendSlackInvite } from '../services/sendSlackInvite'
 class SlackEmailForm extends Component {
 
     state = {
-        inputText: ""
+        inputText: '',
+        formErrorDisplay: 'none'
+        
     }
+
+    displayError = status => status ? 
+        this.setState({
+            inputText: '',
+            formErrorDisplay: 'none'
+        }) :
+        this.setState({
+            inputText: '',
+            formErrorDisplay: 'inline'
+        })
 
     handleFormSubmit = e => {
 
-        const {inputText} = this.state
-
         e.preventDefault()
+
+        const {inputText} = this.state
         
-        isEmail(inputText) ? sendSlackInvite(inputText, slackToken) : this.displayInputError()
+        let inviteAttempted = undefined
+
+        if(isEmail(inputText)) inviteAttempted = sendSlackInvite(inputText, slackToken)
+        
+        inviteAttempted.then(status => this.displayError(status))
 
     }
 
@@ -30,12 +46,6 @@ class SlackEmailForm extends Component {
         
     }
 
-    displayInputError = () => {
-
-        console.log('error')
-
-    }
-
     render() {
 
         return (
@@ -43,11 +53,17 @@ class SlackEmailForm extends Component {
                 className='SlackEmailForm'
                 onSubmit={this.handleFormSubmit}>
                     <input 
+                        className= 'form-control'
                         type='email'
                         placeholder='your-email@email.com'
                         value={this.state.inputText}
                         onChange={this.handleInputChange}
                     />
+                    <span 
+                        className='small success-status-text' 
+                        style={{ display: this.state.formErrorDisplay, color: 'red'}}>
+                        Failed to sumbit! 
+                    </span>
             </form>
         )
     }
