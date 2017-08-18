@@ -7,7 +7,7 @@ import { sendSlackInvite } from '../services/sendSlackInvite'
 
 
 class SlackEmailForm extends Component {
-    
+
     state = {
         inputText: ""
     }
@@ -39,14 +39,15 @@ class SlackEmailForm extends Component {
     render() {
 
         return (
-            <form onSubmit={this.handleFormSubmit}>
-                <input 
-                    className='SlackEmailForm'
-                    type='email'
-                    placeholder='your-email@email.com'
-                    value={this.state.inputText}
-                    onChange={this.handleInputChange}
-                />
+            <form 
+                className='SlackEmailForm'
+                onSubmit={this.handleFormSubmit}>
+                    <input 
+                        type='email'
+                        placeholder='your-email@email.com'
+                        value={this.state.inputText}
+                        onChange={this.handleInputChange}
+                    />
             </form>
         )
     }
