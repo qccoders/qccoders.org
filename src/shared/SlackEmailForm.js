@@ -65,7 +65,7 @@ class SlackEmailForm extends Component {
                         <span 
                             className='small success-status-text' 
                             style={{ display: this.state.formErrorDisplay, color: 'red'}}>
-                            Failed to sumbit! 
+                            Failed to submit! 
                         </span>
                     </div>
                     
