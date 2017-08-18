@@ -17,7 +17,7 @@ class SlackEmailForm extends Component {
         const {inputText} = this.state
 
         e.preventDefault()
-        console.log(isEmail(inputText))
+        
         isEmail(inputText) ? sendSlackInvite(inputText, slackToken) : this.displayInputError()
 
     }
