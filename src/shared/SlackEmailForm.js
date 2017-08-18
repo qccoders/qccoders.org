@@ -52,18 +52,23 @@ class SlackEmailForm extends Component {
             <form 
                 className='SlackEmailForm'
                 onSubmit={this.handleFormSubmit}>
-                    <input 
-                        className= 'form-control'
-                        type='email'
-                        placeholder='your-email@email.com'
-                        value={this.state.inputText}
-                        onChange={this.handleInputChange}
-                    />
-                    <span 
-                        className='small success-status-text' 
-                        style={{ display: this.state.formErrorDisplay, color: 'red'}}>
-                        Failed to sumbit! 
-                    </span>
+                    <div className='form-group'>
+                        <label htmlFor='slack-email-input'>Join our Slack channel!</label>
+                        <input 
+                            className= 'form-control'
+                            id='slack-email-input'
+                            type='email'
+                            placeholder='your-email@email.com'
+                            value={this.state.inputText}
+                            onChange={this.handleInputChange}
+                        />
+                        <span 
+                            className='small success-status-text' 
+                            style={{ display: this.state.formErrorDisplay, color: 'red'}}>
+                            Failed to sumbit! 
+                        </span>
+                    </div>
+                    
             </form>
         )
     }
