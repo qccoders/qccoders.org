@@ -1,0 +1,43 @@
+
+#root {
+    --header-size: 300px;
+    --grid-max-width: 1 / 6;
+    --root-bg:white;
+    --nav-bg:rgb(41, 43, 44);
+    --header-bg:#002440;
+    --main-bg:#fff;
+
+    font-family:"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-size:16px;
+}
+
+#root > div {
+    background-color:var(--root-bg);
+    display:grid;
+    grid-template-rows: 50px var(--header-size) auto auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.App {
+    grid-column: var(--grid-max-width);
+    grid-row: 3 / 5;
+    padding:10px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    background-color:var(--main-bg);
+    margin:5px;
+}
+
+@media only screen and (min-width:1080px)
+{
+    .App {
+        grid-column: var(--grid-max-width);
+        grid-row: 3 / 5;
+        padding:10px;
+        display:flex;
+        flex-direction:row;
+        justify-content:center;
+        background-color:var(--main-bg);
+    }
+}

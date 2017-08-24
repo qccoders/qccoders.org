@@ -1,4 +1,15 @@
+.NavBar {
+    display:flex;
+    flex-direction:row;
+    grid-column: var(--grid-max-width);
+    grid-row: 1 / 2;
+    background-color:var(--nav-bg);
+    padding:15px;
+    margin:0;
+}
+
 .NavBar li {
-    display: inline;
-    padding-right:2em;
+    list-style-type:none;
+    padding-left:15px;
+    color:#fcfcfc;
 }

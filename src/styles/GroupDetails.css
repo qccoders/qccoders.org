@@ -1,0 +1,18 @@
+    .GroupDetails {
+    }
+
+@media only screen and (min-width:1080px) {
+    .GroupDetails {
+        width:400px;
+    }
+}
+
+.SocialIcons {
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+}
+
+.SocialIcon {
+}

@@ -14,7 +14,7 @@ class Header extends Component {
                                 enable:true,
                                 mode: 'grab'
                             }
-                        }    
+                        }
                     },
                     particles: {
                         line_linked: {
@@ -29,5 +29,5 @@ class Header extends Component {
             </div>
         )
     }
-}   
+}
 export default Header
