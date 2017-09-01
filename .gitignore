@@ -8,7 +8,6 @@ src/credentials.js
 
 # production
 /build
-credentials.js
 
 # misc
 .DS_Store
