@@ -11,4 +11,6 @@ This project was built using node 8, though ideally you are using node >=6
 * run  <code>$ npm start</code>
 * point your browser to <code>localhost:3000</code>
 
+* Note that if running the app locally, you will need to provide your own slack token as an environment variable
+
 
