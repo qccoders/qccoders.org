@@ -9,6 +9,7 @@ import eventsList from '../data/calendarData'
 import NavBar from './NavBar'
 import Header from './Header'
 import GroupDetails from './GroupDetails'
+import SlackEmailForm from '../shared/SlackEmailForm'
 
 //styles
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -22,6 +23,7 @@ const App = props => (
     <div className="App">
         <GroupDetails />
         <Calendar eventsList={eventsList} />
+        <SlackEmailForm />
     </div>
   </div>
 );
