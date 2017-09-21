@@ -20,10 +20,16 @@ const App = props => (
   <div>
     <NavBar />
     <Header />
-    <div className="App">
-        <GroupDetails />
-        <Calendar eventsList={eventsList} />
-        <SlackEmailForm />
+    <div className="App container">
+      <div className="row">
+        <div className="col-9">
+          <GroupDetails />
+        </div>
+        <div className="col-3">
+          <Calendar eventsList={eventsList} />
+          <SlackEmailForm />
+        </div>
+      </div>
     </div>
   </div>
 );

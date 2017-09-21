@@ -55,7 +55,7 @@ class SlackEmailForm extends Component {
                     <div className='form-group'>
                         <label htmlFor='slack-email-input'>Join our Slack channel!</label>
                         <input 
-                            className= 'form-control'
+                            className='form-control'
                             id='slack-email-input'
                             type='email'
                             placeholder='your-email@email.com'
