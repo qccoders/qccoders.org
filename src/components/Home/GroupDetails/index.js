@@ -1,5 +1,5 @@
 import React from 'react'
-import FormattedParagraph from '../../../shared/FormattedParagraph'
+import FormattedParagraph from '../../../services/FormattedParagraph'
 import {groupDetailsIntro} from '../../../data/groupDetailsText'
 import SocialMediaIcons from '../../../shared/SocialMediaIcons'
 import socialMediaUrls from '../../../shared/SocialMediaIcons/urls' 
