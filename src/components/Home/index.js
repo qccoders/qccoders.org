@@ -1,24 +1,17 @@
-import React from 'react';
-import {
-  BrowserRouter,
-  Route
-} from 'react-router-dom'
+import React from 'react'
 
-import Calendar from '../shared/Calendar'
-import eventsList from '../data/calendarData'
-import NavBar from './NavBar'
+import Calendar from '../../shared/Calendar'
+import eventsList from '../../data/calendarData'
 import Header from './Header'
 import GroupDetails from './GroupDetails'
-import SlackEmailForm from '../shared/SlackEmailForm'
 
 //styles
 import 'bootstrap/dist/css/bootstrap.min.css'
-import '../styles/App.css';
+import './index.css';
 import 'react-big-calendar/lib/css/react-big-calendar.css'
 
 const App = props => (
   <div>
-    <NavBar />
     <Header />
     <div className="App container">
       <div className="row">
@@ -27,7 +20,6 @@ const App = props => (
         </div>
         <div className="col-3">
           <Calendar eventsList={eventsList} />
-          <SlackEmailForm />
         </div>
       </div>
     </div>

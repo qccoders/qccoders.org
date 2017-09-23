@@ -1,10 +1,9 @@
 import React, { Component } from 'react'
-import {slackToken} from '../credentials'
+import slackToken from '../../../credentials'
 import isEmail from 'validator/lib/isEmail'
 import PropTypes from 'prop-types'
 
-import { sendSlackInvite } from '../services/sendSlackInvite'
-
+import { sendSlackInvite } from '../../../services/sendSlackInvite'
 
 class SlackEmailForm extends Component {
 

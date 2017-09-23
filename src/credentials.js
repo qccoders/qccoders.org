@@ -1,3 +1,3 @@
-module.exports = Object.freeze({
+export default Object.freeze({
     slackToken: process.env.SLACK_TOKEN
 })

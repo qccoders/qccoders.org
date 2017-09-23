@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Particles from 'react-particles-js'
-import '../styles/Header.css'
+import './index.css'
 
 class Header extends Component {
     render() {
