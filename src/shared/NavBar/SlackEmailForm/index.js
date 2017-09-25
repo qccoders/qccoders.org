@@ -55,15 +55,15 @@ class SlackEmailForm extends Component {
                 className='SlackEmailForm form-inline'
                 onSubmit={this.handleFormSubmit}>
                     <div className='form-group'>
-                        <label className='slack-email-text' htmlFor='slack-email-input'>Join our Slack channel!</label>
                         <input 
-                            className='form-control'
+                            className='form-control mr-sm-2'
                             id='slack-email-input'
                             type='email'
                             placeholder='your-email@email.com'
                             value={this.state.inputText}
                             onChange={this.handleInputChange}
                         />
+                        <button className='btn btn-outline-primary'>Get Slack Invite</button>
                         <span 
                             className='small success-status-text' 
                             style={{ display: this.state.formErrorDisplay, color: 'red'}}>
