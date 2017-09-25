@@ -1,0 +1,12 @@
+nav > a {
+    color: white;
+}
+
+nav > a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-is-active {
+    border-bottom: 3px solid #3C84BF;
+}

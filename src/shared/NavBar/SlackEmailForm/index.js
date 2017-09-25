@@ -5,6 +5,8 @@ import PropTypes from 'prop-types'
 
 import { sendSlackInvite } from '../../../services/sendSlackInvite'
 
+import './index.css'
+
 class SlackEmailForm extends Component {
 
     state = {
@@ -48,11 +50,12 @@ class SlackEmailForm extends Component {
     render() {
 
         return (
+            
             <form 
-                className='SlackEmailForm'
+                className='SlackEmailForm form-inline'
                 onSubmit={this.handleFormSubmit}>
                     <div className='form-group'>
-                        <label htmlFor='slack-email-input'>Join our Slack channel!</label>
+                        <label className='slack-email-text' htmlFor='slack-email-input'>Join our Slack channel!</label>
                         <input 
                             className='form-control'
                             id='slack-email-input'

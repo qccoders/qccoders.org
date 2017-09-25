@@ -1,16 +1,16 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import SlackForm from './SlackEmailForm'
 
 import './index.css'
 
 const NavBar = props => (
-    <ul className='NavBar'>
-        <Link to='/'>Home</Link>
-        <Link to='/mission'>Mission</Link>
-        <Link to='/job-board'>Job Board</Link>
+    <nav className='NavBar navbar navbar-dark bg-dark navbar-expand-x'>
+        <NavLink exact to='/' className='nav-item' activeClassName='nav-is-active'>Home</NavLink>
+        <NavLink to='/mission' className='nav-item' activeClassName='nav-is-active'>Mission</NavLink>
+        <NavLink to='/job-board' className='nav-item' activeClassName='nav-is-active'>Job Board</NavLink>
         <SlackForm />
-    </ul>
+    </nav>
 )
 
-export default NavBar
+export default NavBar 
