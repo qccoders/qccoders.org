@@ -5,23 +5,16 @@ import BigCalendar from 'react-big-calendar'
 
 //styles 
 import './index.css'
+import 'react-big-calendar/lib/css/react-big-calendar.css' 
 
 BigCalendar.momentLocalizer(moment);
 
-const Calendar = props => (
-    <div className='Calendar'>
-        <BigCalendar
-            className='BigCalendar'
-            events={props.eventsList}
-            startAccessor='startDate'
-            endAccessor='endDate'
-            views={['month', 'agenda']}
-        />
-    </div>
-);
-
-Calendar.propTypes = {
-    eventsList:PropTypes.array.isRequired
-}
-
-export default Calendar
+export default (props) => (
+  <div>
+    <BigCalendar
+      {...props}
+      events={[]}
+      views={['month']}
+    />
+  </div>
+)

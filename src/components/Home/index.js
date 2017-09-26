@@ -1,23 +1,17 @@
 import React from 'react'
-import Calendar from '../../shared/Calendar'
-import eventsList from '../../data/calendarData'
 import Header from './Header'
 import GroupDetails from './GroupDetails'
 
 //styles
 import './index.css';
-import 'react-big-calendar/lib/css/react-big-calendar.css'
 
 const App = props => (
   <div>
     <Header />
-    <div className="App container">
+    <div className="App container-fluid">
       <div className="row">
-        <div className="col-9">
+        <div className="col">
           <GroupDetails />
-        </div>
-        <div className="col-3">
-          <Calendar eventsList={eventsList} />
         </div>
       </div>
     </div>
