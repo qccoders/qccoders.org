@@ -11,19 +11,21 @@
     "react-dom": "^16.0.0",
     "react-particles-js": "^1.5.0",
     "react-router-dom": "^4.1.2",
-    "react-scripts": "1.0.10",
+    "react-scripts": "1.0.14",
     "react-social-icons": "^2.7.0",
     "validator": "^8.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "react-scripts test --env=jsdom --setupTestFrameworkScriptFile=raf/polyfill",
     "eject": "react-scripts eject"
   },
   "devDependencies": {
     "enzyme": "^3.0.0",
     "enzyme-adapter-react-16": "^1.0.0",
-    "prop-types": "^15.6.0"
+    "prop-types": "^15.6.0",
+    "raf": "^3.3.2",
+    "react-test-renderer": "^16.0.0"
   }
 }
