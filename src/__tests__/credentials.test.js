@@ -18,7 +18,7 @@ describe('application credentials', () => {
         }).toThrow()
     
         expect(() => {
-            credentials.fakeItem = 2
+            credentials.foo = 2
         }).toThrow()
     })
     
