@@ -9,4 +9,7 @@ Things to test:
     d. That when an invalid email gets entered, an error message is thrown
     e. That when a valid email is entered a success message is shown
 
-/*
+*/
+test('stubbed test', () => {
+    expect(true).toBe(true)
+})
