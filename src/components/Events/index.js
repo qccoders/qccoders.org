@@ -7,12 +7,14 @@ import './index.css'
 
 const currentMonth = moment().format('MMMM')
 export default (props) => (
-    <div className='row event-calendar'>
-        <div className='container'>
-            <div className='col'>
-                <h3 className='text-center'>{currentMonth}'s Events</h3>
-                <Calendar toolbar={false}/>
+    <div className='Events'>
+        <div className='row event-calendar'>
+            <div className='container'>
+                <div className='col'>
+                    <h3 className='text-center'>{currentMonth}'s Events</h3>
+                    <Calendar toolbar={false}/>
+                </div>
             </div>
         </div>
-    </div>   
+    </div>
 )
