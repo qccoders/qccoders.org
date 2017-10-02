@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import {SocialIcons} from 'react-social-icons';
 
 //styles
-import './index.css'
+import '../styles/SocialMediaIcons.css'
 
 const SocialMediaIcons = props => (
     <div className='SocialMediaIcons'>
