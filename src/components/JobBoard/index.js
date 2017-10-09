@@ -1,4 +1,12 @@
 import React from 'react'
 import './index.css'
 
-export default props => <div>This is the job board page</div>
+import EmployerList from './EmployerList'
+
+export default props => (
+  <div>
+    <h3>Quad Cities Tech Jobs</h3>
+    <h5>Connected Employers</h5>
+    <EmployerList />
+  </div>
+)
