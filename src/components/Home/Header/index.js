@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import Particles from 'react-particles-js'
 import './index.css'
-import logo from '../../../img/qccoders_logo.jpg'
 
 class Header extends Component {
   render() {
