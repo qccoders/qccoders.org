@@ -7,6 +7,7 @@ import './index.css';
 
 const App = props => (
   <div className='Home'>
+    <Header />
     <div className="App container-fluid">
       <div className="row">
         <div className="col">
