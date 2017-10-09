@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import logoSample from '../../../img/carousel/casual.jpg'
+import logoSample from '../../../img/logos/sample_logo.png'
 import JobPosts from './JobPosts'
 
 //styles
