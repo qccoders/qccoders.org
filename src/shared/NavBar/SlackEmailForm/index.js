@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import slackToken from '../../../credentials'
 import isEmail from 'validator/lib/isEmail'
 import PropTypes from 'prop-types'
 
@@ -33,7 +32,7 @@ class SlackEmailForm extends Component {
         
         let inviteAttempted = undefined
 
-        if(isEmail(inputText)) inviteAttempted = sendSlackInvite(inputText, slackToken)
+        if(isEmail(inputText)) inviteAttempted = sendSlackInvite(inputText)
         
         inviteAttempted.then(status => this.displayError(status))
 
@@ -48,7 +47,6 @@ class SlackEmailForm extends Component {
     }
 
     render() {
-
         return (
             
             <form 
