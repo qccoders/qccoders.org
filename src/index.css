@@ -2,8 +2,14 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-color:red;
   height:100vh;
   margin:5px;
 }
 
+.increase-padding {
+  padding-top: 30px;
+  padding-right: 10%;
+  padding-left: 10%;
+  line-height: 200%;
+  font-weight: 400;
+} 
