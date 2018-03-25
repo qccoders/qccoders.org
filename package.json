@@ -4,29 +4,31 @@
   "private": true,
   "dependencies": {
     "axios": "^0.16.2",
-    "bootstrap": "^4.0.0-beta",
-    "moment": "^2.18.1",
-    "react": "^15.6.1",
+    "bootstrap": "^4.0.0",
+    "moment": "^2.21.0",
+    "prop-types": "^15.6.1",
+    "react": "^16.1.0",
     "react-big-calendar": "^0.14.4",
-    "react-dom": "^16.0.0",
+    "react-dom": "^16.1.0",
     "react-headroom": "^2.2.1",
     "react-particles-js": "^2.0.0",
     "react-responsive-carousel": "^3.1.27",
     "react-router-dom": "^4.2.2",
-    "react-scripts": "1.0.14",
+    "react-scripts": "1.1.1",
     "react-social-icons": "^2.7.0",
     "validator": "^8.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "mocha test/*.js",
+    "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "chai": "^4.1.0",
-    "enzyme": "^2.9.1",
-    "mocha": "^3.4.2",
-    "prop-types": "^15.5.10"
+    "code": "^5.2.0",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "react-test-renderer": "^16.2.0",
+    "sinon": "^4.4.8"
   }
 }
