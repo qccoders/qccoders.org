@@ -4,11 +4,12 @@
   "private": true,
   "dependencies": {
     "axios": "^0.16.2",
-    "bootstrap": "^4.0.0-beta",
+    "bootstrap": "^4.0.0",
     "moment": "^2.18.1",
-    "react": "^15.6.1",
+    "prop-types": "^15.6.1",
+    "react": "^16.1.0",
     "react-big-calendar": "^0.14.4",
-    "react-dom": "^16.0.0",
+    "react-dom": "^16.1.0",
     "react-headroom": "^2.2.1",
     "react-particles-js": "^2.0.0",
     "react-responsive-carousel": "^3.1.27",
@@ -24,9 +25,9 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "chai": "^4.1.0",
-    "enzyme": "^2.9.1",
-    "mocha": "^3.4.2",
-    "prop-types": "^15.5.10"
+    "code": "^5.2.0",
+    "enzyme": "^3.3.0",
+    "react-test-renderer": "^16.2.0",
+    "sinon": "^4.4.8"
   }
 }
