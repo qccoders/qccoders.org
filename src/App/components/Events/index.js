@@ -8,9 +8,9 @@ import './index.css'
 const currentMonth = moment().format('MMMM')
 const eventURL = 'http://localhost:3001/events'
 const parseJson = (jsonResponse) => jsonResponse.json();
-const logData = (json) => console.log(json)
+const logData = (json) => {console.log(json); return json;}
 const formatData = (json) => 
-    json.map((event, index) => ({id: event.index, title: event.title, allDay: false, start: event.startDate, end: event.endDate}));
+    json.map((event, index) => ({id: index, title: event.title, allDay: false, start: event.startDate, end: event.endDate}));
 
     
 class Events extends React.Component {
