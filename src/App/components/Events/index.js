@@ -6,7 +6,7 @@ import moment from 'moment'
 import './index.css'
 
 const currentMonth = moment().format('MMMM')
-const eventURL = 'http://localhost:3001/events'
+const eventURL = 'https://qccoderseventservice.glitch.me/events'
 const parseJson = (jsonResponse) => jsonResponse.json();
 const logData = (json) => {console.log(json); return json;}
 const formatData = (json) => 
@@ -38,4 +38,4 @@ class Events extends React.Component {
         )
     }
 }
-export default (props) => new Events(props);
+export default (props) => <Events />;
