@@ -13,7 +13,7 @@ export default (props) => (
   <div>
     <BigCalendar
       {...props}
-      events={[]}
+      events={props.events}
       views={['month']}
     />
   </div>
