@@ -1,27 +1,30 @@
 html {
-  background-color: #000;
+  background-color: #03A9F4;
 }
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  width: 100vw;
   height:100vh;
-  margin:5px;
-  background-color: #263238 !important;
+
+  background-color: #263238;
 
 }
 
-.increase-padding {
+/* .increase-padding {
   padding-top: 30px;
   padding-right: 10%;
   padding-left: 10%;
   line-height: 200%;
   font-weight: 400;
-} 
+}  */
 @media (min-width: 629px) {
   body {
     display: block;
     margin: auto !important;
+    border-left: 3px solid #455A64;
+    border-right: 3px solid #455A64;
     width: 629px;
   }
  }
