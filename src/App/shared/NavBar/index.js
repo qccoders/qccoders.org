@@ -1,9 +1,8 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import SlackForm from './SlackEmailForm'
 import logo from '../../img/logos/qccoder_logo.png'
 import Headroom from 'react-headroom'
-import Logo from '../Logo'
+import Logo from './Logo'
 
 import './index.css'
 

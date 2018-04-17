@@ -6,7 +6,7 @@ import {groupContactInfo} from '../../data/groupContactText'
 
 //styles
 import './index.css'
-import SlackEmailForm from '../NavBar/SlackEmailForm';
+import SlackEmailForm from './SlackEmailForm';
 
 export default props => (
   <div className='container-flud Footer'>

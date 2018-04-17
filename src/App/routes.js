@@ -1,7 +1,6 @@
 import React from 'react'
 import {BrowserRouter, Switch, Route} from 'react-router-dom'
 import NavBar from './shared/NavBar'
-import Logo from './shared/Logo'
 import Footer from './shared/Footer'
 import Home from './components/Home'
 import Events from './components/Events'
