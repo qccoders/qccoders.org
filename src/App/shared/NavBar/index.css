@@ -1,12 +1,14 @@
 nav > a {
-    color: white;
+    color: #000;
 }
 
 nav > a:hover {
-    color: white;
+    color: #000;
     text-decoration: none;
 }
-
+.nav {
+    background-color: #fff;
+}
 .nav-is-active {
-    border-bottom: 3px solid #3C84BF ;
+    border-bottom: 3px solid #FF6D00 ;
 }
