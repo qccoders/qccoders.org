@@ -20,9 +20,5 @@ export default (props) => (
       <img src={logo3} alt='meetup presentation'/>
       <p></p>
     </div>
-    <div>
-      <img src={logo4} alt='qccoders'/>
-      <p></p>
-    </div>
   </Carousel>
 )
