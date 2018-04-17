@@ -6,7 +6,7 @@ import {groupDetailsIntro} from '../../../data/groupDetailsText'
 import './index.css'
 
 const GroupDetails = props => (
-  <div className="GroupDetails">
+  <div className="group-details">
     <h1>Who are we? Glad you asked!</h1>
     <FormattedParagraph text={groupDetailsIntro} />
   </div>
