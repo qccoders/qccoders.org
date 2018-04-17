@@ -1,5 +1,7 @@
 .SocialMediaIcons{
-  padding: 2%;
+  display: block;
+  text-align: center;
+  padding: 1%;
 }
 .social-icon {
   margin-right: 1%;
