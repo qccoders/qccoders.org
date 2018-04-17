@@ -1,0 +1,12 @@
+.form-group {
+    margin: auto;
+    margin-top: 2%;
+}
+
+.btn {
+    display: block !important;
+    background-color: #439fd2;
+    color: #fff;
+    margin: auto;
+    margin-top: 2%;
+}
