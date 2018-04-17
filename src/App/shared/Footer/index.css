@@ -1,5 +1,12 @@
 .Footer {
-  background-color: #263238
-  ;
+  background-color: #263238;
   color: white;
+}
+
+.contact-info {
+  display: block;
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 0;
+  padding-bottom: 2%;
 }

@@ -12,6 +12,6 @@ export default props => (
   <div className='container-flud Footer'>
     <SocialMediaIcons urls={socialMediaUrls}/>
     <SlackEmailForm/>
-    <FormattedParagraph text={groupContactInfo} />
+    <p className="contact-info">{groupContactInfo}</p>
   </div>
 )
