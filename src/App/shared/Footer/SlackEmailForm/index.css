@@ -1,12 +1,17 @@
 .form-group {
     margin: auto;
     margin-top: 2%;
+    display: block !important;
 }
 
+#slack-email-input {
+    display: block !important;
+}
 .btn {
     display: block !important;
     background-color: #439fd2;
     color: #fff;
     margin: auto;
     margin-top: 2%;
+    margin-bottom: 2%;
 }
