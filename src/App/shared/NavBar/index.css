@@ -9,8 +9,7 @@ nav > a:hover {
     text-decoration: none;
 }
 .nav {
-    background-color: #263238
-    ;
+    background-color: #263238;
 }
 .nav-is-active {
     border-bottom: 3px solid #FF6D00 ;

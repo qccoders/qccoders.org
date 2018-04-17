@@ -12,7 +12,6 @@ import NotFound from './components/NotFound'
 export default props => (
     <BrowserRouter>
         <div>
-            <Logo />
             <NavBar />
             <Switch>
                 <Route exact path='/' component={Home} />
