@@ -1,6 +1,5 @@
 nav > a {
     color: #f8f8ff;
-    font-weight: bold;
     font-size: 110%;
 }
 
@@ -12,5 +11,5 @@ nav > a:hover {
     background-color: #263238;
 }
 .nav-is-active {
-    border-bottom: 3px solid #FF6D00 ;
+    border-bottom: 3px solid #03a9f4 ;
 }

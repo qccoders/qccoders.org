@@ -6,9 +6,9 @@ import Logo from './Logo'
 
 import './index.css'
 
-const eventText = "{ Events }"
-const missionText = "{ Mission }"
-const jobText = "{ Job Board }"
+const eventText = "Events"
+const missionText = "Mission"
+const jobText = "Job Board"
 
 const NavBar = props => (
     <Headroom>
