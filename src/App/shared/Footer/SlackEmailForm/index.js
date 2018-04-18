@@ -29,7 +29,7 @@ class SlackEmailForm extends Component {
         e.preventDefault()
 
         const {inputText} = this.state
-        
+        if (!inputText) return;
         let inviteAttempted = undefined
 
         if(isEmail(inputText)) inviteAttempted = sendSlackInvite(inputText)
