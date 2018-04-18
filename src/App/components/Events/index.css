@@ -5,3 +5,9 @@
 .rbc-calendar {
     height: 400px;
 }
+
+.Events {
+    padding-bottom: 6%;
+    margin-bottom: 2%;
+    background-color: #f8f8ff;
+}
