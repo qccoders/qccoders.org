@@ -1,8 +1,9 @@
 .logo-class {
-    padding: 2%;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    background-color: #263238
-    ;
+    height: 100%;
+    padding-bottom: 2%;
+    display: block;
+    background-color: #263238;
 }
