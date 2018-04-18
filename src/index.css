@@ -1,5 +1,5 @@
 html {
-  background-color: #03A9F4;
+  background-color: #263238;
 }
 body {
   margin: 0;
@@ -23,8 +23,6 @@ body {
   body {
     display: block;
     margin: auto !important;
-    border-left: 3px solid #455A64;
-    border-right: 3px solid #455A64;
     width: 629px;
   }
  }
