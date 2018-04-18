@@ -1,0 +1,19 @@
+.form-group {
+    margin: auto;
+    display: block !important;
+    margin-bottom: 0 !important;
+
+}
+
+#slack-email-input {
+    text-align: center;
+    margin-top: 16px;
+    display: block !important;
+}
+.btn {
+    display: block !important;
+    background-color: #03a9f4;
+    color: #fff;
+    margin: auto;
+    margin-bottom: 0;
+}

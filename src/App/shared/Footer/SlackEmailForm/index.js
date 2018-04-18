@@ -29,7 +29,7 @@ class SlackEmailForm extends Component {
         e.preventDefault()
 
         const {inputText} = this.state
-        
+        if (!inputText) return;
         let inviteAttempted = undefined
 
         if(isEmail(inputText)) inviteAttempted = sendSlackInvite(inputText)
@@ -61,7 +61,7 @@ class SlackEmailForm extends Component {
                             value={this.state.inputText}
                             onChange={this.handleInputChange}
                         />
-                        <button className='btn btn-outline-primary'>Get Slack Invite</button>
+                        <button className='btn'>Get Slack Invite</button>
                         <span 
                             className='small success-status-text' 
                             style={{ display: this.state.formErrorDisplay, color: 'red'}}>

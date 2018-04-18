@@ -6,10 +6,12 @@ import {groupContactInfo} from '../../data/groupContactText'
 
 //styles
 import './index.css'
+import SlackEmailForm from './SlackEmailForm';
 
 export default props => (
   <div className='container-flud Footer'>
     <SocialMediaIcons urls={socialMediaUrls}/>
-    <FormattedParagraph text={groupContactInfo} />
+    <SlackEmailForm/>
+    <p className="contact-info">{groupContactInfo}</p>
   </div>
 )
