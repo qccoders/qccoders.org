@@ -9,6 +9,7 @@ nav > a:hover {
 }
 .nav {
     background-color: #263238;
+    padding-bottom: 3% !important;
 }
 .nav-is-active {
     border-bottom: 3px solid #03a9f4 ;
