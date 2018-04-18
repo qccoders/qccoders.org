@@ -9,5 +9,8 @@
   text-align: center;
   font-style: italic;
   margin-bottom: 0;
-  padding-bottom: 2%;
+  margin-top: 16px !important;
+  margin-bottom: 16px;
+  margin-left: 16px;
+  margin-right: 16px;
 }
