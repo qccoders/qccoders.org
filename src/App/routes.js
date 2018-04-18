@@ -15,8 +15,8 @@ export default props => (
             <Switch>
                 <Route exact path='/' component={Home} />
                 <Route path='/events' component={Events} />
-                <Route path='/' component={JobBoard} />
-                <Route path='/' component={Mission} />
+                <Route path='/' component={Home} />
+                <Route path='/' component={Home} />
                 <Route component={NotFound} />
             </Switch>
             <Footer />
