@@ -10,7 +10,7 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import './index.css'
 
 export default (props) => (
-  <Carousel showStatus={false} infiniteLoop={true} showArrows={false} autoPlay={true} dynamicHeight={true} showThumbs={false}>
+  <Carousel className="header-caro" showStatus={false} infiniteLoop={true} showArrows={false} autoPlay={true} dynamicHeight={true} showThumbs={false}>
     <div>
       <img src={logo1} alt='anniversary cake'/>
       <p></p>
@@ -18,10 +18,6 @@ export default (props) => (
    
     <div>
       <img src={logo3} alt='meetup presentation'/>
-      <p></p>
-    </div>
-    <div>
-      <img src={logo4} alt='qccoders'/>
       <p></p>
     </div>
   </Carousel>

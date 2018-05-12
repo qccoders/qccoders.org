@@ -1,7 +1,17 @@
-.event-calendar {
-    padding-top: 5%;
-}
 
+
+.container {
+    margin-left: 16px;
+    margin-right: 16px;
+}
 .rbc-calendar {
     height: 400px;
+}
+.text-center {
+    margin-bottom: 8px !important;
+}
+.Events {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    background-color: #f8f8ff;
 }

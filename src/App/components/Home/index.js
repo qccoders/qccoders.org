@@ -8,13 +8,11 @@ import './index.css';
 const App = props => (
   <div className='Home'>
     <Header className='Header'/>
-    <div className="App increase-padding">
       <div className="row">
         <div className="col">
           <GroupDetails />
         </div>
       </div>
-    </div>
   </div>
 );
 
