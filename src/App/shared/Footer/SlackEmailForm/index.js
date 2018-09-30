@@ -60,7 +60,7 @@ class SlackEmailForm extends Component {
                             value={this.state.inputText}
                             onChange={this.handleInputChange}
                         />
-                        <button className='btn'>Get Slack Invite</button>
+                        <button className='btn'>Send Slack Invite</button>
                         <span 
                             className='small success-status-text' 
                             style={{ display: this.state.formErrorDisplay, color: 'red'}}>
