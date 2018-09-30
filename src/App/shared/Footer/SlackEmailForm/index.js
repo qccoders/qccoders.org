@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import isEmail from 'validator/lib/isEmail'
-import PropTypes from 'prop-types'
 
 import { sendSlackInvite } from '../../../services/sendSlackInvite'
 

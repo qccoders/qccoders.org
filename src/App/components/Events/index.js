@@ -1,6 +1,5 @@
 import React from 'react'
 import Calendar from '../../shared/Calendar'
-import eventsList from '../../data/calendarData'
 import moment from 'moment'
 
 import './index.css'
@@ -8,7 +7,6 @@ import './index.css'
 const currentMonth = moment().format('MMMM')
 const eventURL = 'https://qccoderseventservice.glitch.me/events'
 const parseJson = (jsonResponse) => jsonResponse.json();
-const logData = (json) => {console.log(json); return json;}
 const formatData = (json) => 
     json.map((event, index) => ({id: index, title: event.title, allDay: false, start: event.startDate, end: event.endDate}));
 

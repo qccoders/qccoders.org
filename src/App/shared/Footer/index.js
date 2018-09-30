@@ -1,7 +1,6 @@
 import React from 'react'
 import SocialMediaIcons from '../SocialMediaIcons'
 import socialMediaUrls from '../SocialMediaIcons/urls'
-import FormattedParagraph from '../../services/FormattedParagraph'
 import {groupContactInfo} from '../../data/groupContactText'
 
 //styles

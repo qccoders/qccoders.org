@@ -1,6 +1,5 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import logo from '../../img/logos/qccoder_logo.png'
 import Headroom from 'react-headroom'
 import Logo from './Logo'
 
