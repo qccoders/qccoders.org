@@ -36,7 +36,7 @@ class EmployerList extends Component {
     return employers.map(employer => {
       return (
         <li key={employer.name}>
-          <img src={employer.logo} /> 
+          <img src={employer.logo} alt={employer.name} /> 
           <JobPosts jobs={employer.jobs}/>
         </li>
       )

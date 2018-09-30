@@ -1,18 +1,18 @@
 nav > a {
-    color: #f8f8ff;
+    color: black;
     font-size: 110%;
 }
 
 nav > a:hover {
-    color: #f8f8ff;
     text-decoration: none;
 }
+
 .nav {
-    background-color: #263238;
     padding-bottom: 16px !important;
     padding-left: 16px !important;
     padding-right: 16px !important;
 }
+
 .nav-is-active {
     border-bottom: 3px solid #03a9f4 ;
 }
