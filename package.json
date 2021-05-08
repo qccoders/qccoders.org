@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "axios": "^0.18.1",
+    "axios": "^0.21.1",
     "bootstrap": "^4.3.1",
     "moment": "^2.21.0",
     "prop-types": "^15.6.1",
@@ -14,7 +14,7 @@
     "react-particles-js": "^2.0.0",
     "react-responsive-carousel": "^3.1.27",
     "react-router-dom": "^4.2.2",
-    "react-scripts": "1.1.1",
+    "react-scripts": "^4.0.3",
     "react-social-icons": "^2.7.0",
     "validator": "^8.2.0"
   },
@@ -30,5 +30,17 @@
     "enzyme-adapter-react-16": "^1.1.1",
     "react-test-renderer": "^16.2.0",
     "sinon": "^4.4.8"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
