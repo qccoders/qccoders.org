@@ -1,0 +1,103 @@
+.wrapper {
+  position: relative;
+
+  @media only screen and (min-device-width: 320px) {
+    width: 300px;
+    margin-right: 0px;
+    margin-bottom: 16px;
+  }
+
+  @media only screen and (min-device-width: 370px) {
+    width: 340px;
+    margin-right: 8px;
+  }
+
+  @media only screen and (min-device-width: 411px) {
+    width: 380px;
+    margin-right: 8px;
+  }
+
+  @media only screen and (min-device-width: 500px) {
+    margin-right: 0;
+    margin-left: 16px;
+    width: 400px;
+  }
+
+  .spinner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #bcccdc;
+  border-radius: 0px 15px 0px 15px;
+  background-color: #fcfdfe;
+  padding: 16px;
+  height: 324px;
+  max-height: 324px;
+  overflow: scroll;
+  h1 {
+    font-size: 1.1rem;
+    font-family: 'Amaranth', sans-serif;
+    margin: 0;
+    color: #000;
+    padding: 0;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+  .months {
+    > * {
+      margin: 2px;
+      cursor: pointer;
+    }
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .badge {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .title {
+    display: flex;
+    justify-content: space-between;
+    p {
+      margin-bottom: 0;
+      font-size: 1.1rem;
+    }
+    .text {
+      flex: 2;
+    }
+    .end {
+      text-align: end;
+      flex: 1;
+    }
+  }
+
+  .animation {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: #fff;
+    @keyframes frames {
+      0% {
+        opacity: 0.75;
+        left: 100%;
+        transition-property: left, opacity;
+      }
+      100% {
+        opacity: 0;
+        left: 0;
+      }
+    }
+    animation: frames 0.5s ease;
+  }
+}

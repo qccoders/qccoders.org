@@ -1,0 +1,30 @@
+.wrapper {
+  position: relative;
+  background-color: white;
+  border-radius: 0px 15px 0px 15px;
+  height: 320px;
+  width: 400px;
+  overflow: hidden;
+
+  @media only screen and (min-device-width: 320px) {
+    max-width: 300px;
+    margin-right: 0px;
+    margin-bottom: 16px;
+  }
+
+  @media only screen and (min-device-width: 370px) {
+    max-width: 340px;
+    margin-right: 8px;
+  }
+
+  @media only screen and (min-device-width: 411px) {
+    max-width: 380px;
+    margin-right: 8px;
+  }
+
+  @media only screen and (min-device-width: 500px) {
+    margin-right: 0;
+    margin-left: 16px;
+    max-width: 400px;
+  }
+}
