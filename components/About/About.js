@@ -3,12 +3,19 @@ import { TextInput, Button, EnvelopeIcon, toaster } from 'evergreen-ui'
 import { useContext, useState } from 'react'
 import { HomeContext } from '../../contexts/HomeContext/HomeContext'
 
-const fetchInvite = async (email, handleSuccess, handleError) =>
-  fetch('https://httpstat.us/200')
+const fetchInvite = async email =>
+  fetch(
+    `https://slack.com/api/users.admin.invite?resend=true&token=${process.env.NEXT_PUBLIC_SLACK_TOKEN}&email=${email}&channels=C2C6PRY0Y`
+  )
 
 const About = () => {
   const { email, setEmail, isEmailValid } = useContext(HomeContext)
   const [isLoading, setIsLoading] = useState(false)
+
+  const failInvite = () =>
+    toaster.danger('Unable to send Slack invite, try again.', {
+      duration: 2,
+    })
 
   return (
     <div className={styles.container}>
@@ -41,13 +48,20 @@ const About = () => {
           onClick={() => {
             if (isEmailValid) {
               setIsLoading(true)
-              fetchInvite(email).then(
-                () => {
-                  setIsLoading(false)
-                  toaster.success('See you on Slack!', { duration: 2 })
-                },
-                () => setIsLoading(false)
-              )
+              fetchInvite(email)
+                .then(res => res.json())
+                .then(
+                  json => {
+                    setIsLoading(false)
+                    json.ok
+                      ? toaster.success('See you on Slack!', { duration: 2 })
+                      : failInvite()
+                  },
+                  () => {
+                    setIsLoading(false)
+                    failInvite()
+                  }
+                )
             } else {
               toaster.danger('Enter a valid email to join Slack.', {
                 duration: 2,
