@@ -1,16 +1,18 @@
-## QC Coders Website v2
+# QC Coders Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+### Local Development
 
-## Installation
-This project was built using node 8, though ideally you are using node >=6
+`npm install`
+`npm run dev`
 
-* fork this repository and clone from your newly created repo
-* make sure you are running node.js https://nodejs.org/en/download/
-* run  <code>$ npm install</code>
-* run  <code>$ npm start</code>
-* point your browser to <code>localhost:3000</code>
+Add `NEXT_PUBLIC_SLACK_TOKEN` to `.env.local`
 
-* Note that if running the app locally, you will need to provide your own slack token as an environment variable
+To learn more about Next.js, take a look at the following resources:
 
+---
 
+### Documentation
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details on Vercel.
