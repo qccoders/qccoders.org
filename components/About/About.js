@@ -35,7 +35,7 @@ const About = () => {
         </p>
       </div>
       <div className={styles.invite}>
-        <TextInput
+        {/* <TextInput
           name="email"
           placeholder="your-email@email.com"
           onChange={e => {
@@ -43,36 +43,14 @@ const About = () => {
           }}
           value={email}
           marginRight={8}
-        />
+        /> */}
         <Button
-          onClick={() => {
-            if (isEmailValid) {
-              setIsLoading(true)
-              fetchInvite(email)
-                .then(res => res.json())
-                .then(
-                  json => {
-                    setIsLoading(false)
-                    json.ok
-                      ? toaster.success('See you on Slack!', { duration: 2 })
-                      : failInvite()
-                  },
-                  () => {
-                    setIsLoading(false)
-                    failInvite()
-                  }
-                )
-            } else {
-              toaster.danger('Enter a valid email to join Slack.', {
-                duration: 2,
-              })
-            }
-          }}
+          onClick={() => window.open('https://join.slack.com/t/qccoders/shared_invite/zt-2x1866shj-0UkboyhanpFSQuB_0Uy8tA', '_blank', 'noopener,noreferrer')}
           appearance={isLoading ? '' : 'primary'}
           iconAfter={isLoading ? null : EnvelopeIcon}
           isLoading={isLoading}
         >
-          Join Slack
+          Join us on Slack
         </Button>
       </div>
     </div>
